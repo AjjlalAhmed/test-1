@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    #header{
+        background-color: thistle;
+        padding: 20px;
+        ul{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            li{
+                list-style: none;
+                text-transform: capitalize;
+                h1{
+                    font-size: 2rem ;
+                }
+                a{
+                    text-decoration: none;
+                    font-size: 1.2rem;
+                    color: #fff;
+                    background: #222;
+                    padding: 10px;
+                    border-radius: 3px;
+                    &:active{
+                        background: #fff;
+                        color: #222;
+                    }
+                }
+            }
+        }
+    }
+    #form-container{
+        display: flex;
+        justify-content: center;
+        min-height: 70vh;
+        align-items: center;
+       
+        #form{
+            background-color: rgba(212, 186, 212,.5);
+            padding: 4rem;
+            .form-control{
+                padding: 10px;
+                label{
+                    text-transform: capitalize;
+                    font-size: 1.3rem;
+                }
+                input{
+                    width: 100%;
+                    padding: 10px 0px;
+                    font-size: 1rem;
+                }
+            }
+            #btn{
+                display: flex;
+                justify-content: center;
+                #submit{
+                   padding: 10px;
+                   width: 100%;
+                   border: 1px solid transparent;
+                   background-color: #222;
+                   color: #fff;
+                   text-transform: capitalize;
+                   font-size: 1rem;
+                   font-weight: 700;
+                   &:active{
+                    background: #fff;
+                    color: #222;
+                }
+                }
+            }
+        }
+    }
+}
